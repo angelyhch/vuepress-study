@@ -1,0 +1,10 @@
+{
+  "name": "vuepress-yarn",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "angelyhch",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.9.7"
+  }
+}
