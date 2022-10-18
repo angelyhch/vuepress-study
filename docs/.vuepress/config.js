@@ -17,5 +17,12 @@ module.exports = {
     ],
     sidebar: 'auto',
     lastUpdated: true
+  },
+  configureWebpack: {
+    resolve: {
+      alias: {
+        '@': '/docs/.vuepress/'
+      }
+    }
   }
 }
