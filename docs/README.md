@@ -2,6 +2,17 @@
 
 ## tt
 
+## 代码块的高亮
+``` js {1,3-4}
+export default {
+  data () {
+    return {
+      msg: 'Highlighted!'
+    }
+  }
+}
+```
+
 this.$site:
 
 {{this.$site}}
