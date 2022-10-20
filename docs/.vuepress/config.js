@@ -2,6 +2,9 @@ module.exports = {
   title: ' angel blog',
   description: '学习vuepress的demo',
   themeConfig: {
+    plugins: {
+      // 'vuepress-plugin-auto-sidebar': {}
+    },
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/' },
