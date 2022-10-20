@@ -12,5 +12,8 @@
   "devDependencies": {
     "vuepress": "^1.9.7",
     "vuepress-plugin-auto-sidebar": "^2.3.2"
+  },
+  "dependencies": {
+    "moment": "^2.29.4"
   }
 }
