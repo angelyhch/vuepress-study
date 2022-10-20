@@ -2,6 +2,7 @@ const moment = require('moment')
 const nav = require('./nav')
 
 module.exports = {
+  base: '/docs/',
   title: ' angel blog',
   description: '学习vuepress的demo',
   head: [
