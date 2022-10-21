@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Hello VuePress |  angel blog</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="学习vuepress的demo">
+    <meta name="author" content="angelyhch">
+    <meta name="keywords" content="vuepress, angelyhch">
+    
+    <link rel="preload" href="/vuepress-study/assets/css/0.styles.9fee17a2.css" as="style"><link rel="preload" href="/vuepress-study/assets/js/app.1e47c929.js" as="script"><link rel="preload" href="/vuepress-study/assets/js/2.54a4821a.js" as="script"><link rel="preload" href="/vuepress-study/assets/js/10.0ded0462.js" as="script"><link rel="preload" href="/vuepress-study/assets/js/8.eb190d5e.js" as="script"><link rel="preload" href="/vuepress-study/assets/js/3.ada582e7.js" as="script"><link rel="prefetch" href="/vuepress-study/assets/js/11.7d285981.js"><link rel="prefetch" href="/vuepress-study/assets/js/12.7747a8e8.js"><link rel="prefetch" href="/vuepress-study/assets/js/13.9d53813c.js"><link rel="prefetch" href="/vuepress-study/assets/js/14.33208092.js"><link rel="prefetch" href="/vuepress-study/assets/js/15.a53f3cdd.js"><link rel="prefetch" href="/vuepress-study/assets/js/16.6a2d8862.js"><link rel="prefetch" href="/vuepress-study/assets/js/17.46e37bc5.js"><link rel="prefetch" href="/vuepress-study/assets/js/18.b3453ebe.js"><link rel="prefetch" href="/vuepress-study/assets/js/4.aac60c44.js"><link rel="prefetch" href="/vuepress-study/assets/js/5.abf5e738.js"><link rel="prefetch" href="/vuepress-study/assets/js/6.da1f7a7c.js"><link rel="prefetch" href="/vuepress-study/assets/js/7.71dbfcf3.js"><link rel="prefetch" href="/vuepress-study/assets/js/9.1dda9418.js">
+    <link rel="stylesheet" href="/vuepress-study/assets/css/0.styles.9fee17a2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vuepress-study/" aria-current="page" class="home-link router-link-exact-active router-link-active"><!----> <span class="site-name"> angel blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="about" class="dropdown-title"><span class="title">about</span> <span class="arrow down"></span></button> <button type="button" aria-label="about" class="mobile-dropdown-title"><span class="title">about</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-study/about/" class="nav-link">
+  About
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="guide" class="dropdown-title"><span class="title">guide</span> <span class="arrow down"></span></button> <button type="button" aria-label="guide" class="mobile-dropdown-title"><span class="title">guide</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-study/guide/" class="nav-link">
+  Guide
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="packComP" class="dropdown-title"><span class="title">packComP</span> <span class="arrow down"></span></button> <button type="button" aria-label="packComP" class="mobile-dropdown-title"><span class="title">packComP</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-study/packComP/" class="nav-link">
+  Pack Com P
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="vssue" class="dropdown-title"><span class="title">vssue</span> <span class="arrow down"></span></button> <button type="button" aria-label="vssue" class="mobile-dropdown-title"><span class="title">vssue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-study/vssue/" class="nav-link">
+  Vssue
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="about" class="dropdown-title"><span class="title">about</span> <span class="arrow down"></span></button> <button type="button" aria-label="about" class="mobile-dropdown-title"><span class="title">about</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-study/about/" class="nav-link">
+  About
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="guide" class="dropdown-title"><span class="title">guide</span> <span class="arrow down"></span></button> <button type="button" aria-label="guide" class="mobile-dropdown-title"><span class="title">guide</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-study/guide/" class="nav-link">
+  Guide
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="packComP" class="dropdown-title"><span class="title">packComP</span> <span class="arrow down"></span></button> <button type="button" aria-label="packComP" class="mobile-dropdown-title"><span class="title">packComP</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-study/packComP/" class="nav-link">
+  Pack Com P
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="vssue" class="dropdown-title"><span class="title">vssue</span> <span class="arrow down"></span></button> <button type="button" aria-label="vssue" class="mobile-dropdown-title"><span class="title">vssue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-study/vssue/" class="nav-link">
+  Vssue
+</a></li></ul></div></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="hello-vuepress"><a href="#hello-vuepress" class="header-anchor">#</a> Hello VuePress</h1> <h2 id="tt"><a href="#tt" class="header-anchor">#</a> tt</h2> <h2 id="临时调试countjs第三方组件"><a href="#临时调试countjs第三方组件" class="header-anchor">#</a> 临时调试countjs第三方组件</h2> <div><!----></div> <h2 id="代码块的高亮"><a href="#代码块的高亮" class="header-anchor">#</a> 代码块的高亮</h2> <div class="language-js extra-class"><div class="highlight-lines"><div class="highlighted"> </div><br><div class="highlighted"> </div><div class="highlighted"> </div><br><br><br><br></div><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">data</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">msg</span><span class="token operator">:</span> <span class="token string">'Highlighted!'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>this.$site:</p> <p>{
+  &quot;title&quot;: &quot; angel blog&quot;,
+  &quot;description&quot;: &quot;学习vuepress的demo&quot;,
+  &quot;base&quot;: &quot;/vuepress-study/&quot;,
+  &quot;headTags&quot;: [
+    [
+      &quot;meta&quot;,
+      {
+        &quot;name&quot;: &quot;author&quot;,
+        &quot;content&quot;: &quot;angelyhch&quot;
+      }
+    ],
+    [
+      &quot;meta&quot;,
+      {
+        &quot;name&quot;: &quot;keywords&quot;,
+        &quot;content&quot;: &quot;vuepress, angelyhch&quot;
+      }
+    ]
+  ],
+  &quot;pages&quot;: [
+    {
+      &quot;title&quot;: &quot;Hello VuePress&quot;,
+      &quot;frontmatter&quot;: {},
+      &quot;regularPath&quot;: &quot;/&quot;,
+      &quot;relativePath&quot;: &quot;README.md&quot;,
+      &quot;key&quot;: &quot;v-332e7429&quot;,
+      &quot;path&quot;: &quot;/&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;tt&quot;,
+          &quot;slug&quot;: &quot;tt&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;临时调试countjs第三方组件&quot;,
+          &quot;slug&quot;: &quot;临时调试countjs第三方组件&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;代码块的高亮&quot;,
+          &quot;slug&quot;: &quot;代码块的高亮&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;index循环&quot;,
+          &quot;slug&quot;: &quot;index循环&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;this.$route&quot;,
+          &quot;slug&quot;: &quot;this-route&quot;
+        }
+      ],
+      &quot;lastUpdated&quot;: &quot;2022年10月21日星期五 09:38&quot;,
+      &quot;lastUpdatedTimestamp&quot;: 1666316326000,
+      &quot;createdTime&quot;: 1666067187000
+    },
+    {
+      &quot;title&quot;: &quot;Guidea&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;sidebar&quot;: &quot;auto&quot;,
+        &quot;sidebarDepth&quot;: 3
+      },
+      &quot;regularPath&quot;: &quot;/about/&quot;,
+      &quot;relativePath&quot;: &quot;about/README.md&quot;,
+      &quot;key&quot;: &quot;v-e9fcbda6&quot;,
+      &quot;path&quot;: &quot;/about/&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;aaa&quot;,
+          &quot;slug&quot;: &quot;aaa&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;bbb&quot;,
+          &quot;slug&quot;: &quot;bbb&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;hhh&quot;,
+          &quot;slug&quot;: &quot;hhh&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;三级标题&quot;,
+          &quot;slug&quot;: &quot;三级标题&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;ccc&quot;,
+          &quot;slug&quot;: &quot;ccc&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;ddd&quot;,
+          &quot;slug&quot;: &quot;ddd&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;eee&quot;,
+          &quot;slug&quot;: &quot;eee&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;fff&quot;,
+          &quot;slug&quot;: &quot;fff&quot;
+        }
+      ],
+      &quot;lastUpdated&quot;: &quot;2022年10月20日星期四 20:18&quot;,
+      &quot;lastUpdatedTimestamp&quot;: 1666268314000,
+      &quot;createdTime&quot;: 1666268314000
+    },
+    {
+      &quot;title&quot;: &quot;about H2&quot;,
+      &quot;frontmatter&quot;: {},
+      &quot;regularPath&quot;: &quot;/about/about1.html&quot;,
+      &quot;relativePath&quot;: &quot;about/about1.md&quot;,
+      &quot;key&quot;: &quot;v-afdb321c&quot;,
+      &quot;path&quot;: &quot;/about/about1.html&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;about H2&quot;,
+          &quot;slug&quot;: &quot;about-h2&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;about H2 -2&quot;,
+          &quot;slug&quot;: &quot;about-h2-2&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;about H3-1&quot;,
+          &quot;slug&quot;: &quot;about-h3-1&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;about H3-2&quot;,
+          &quot;slug&quot;: &quot;about-h3-2&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;about H3-3&quot;,
+          &quot;slug&quot;: &quot;about-h3-3&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;about H3-4&quot;,
+          &quot;slug&quot;: &quot;about-h3-4&quot;
+        }
+      ],
+      &quot;lastUpdated&quot;: &quot;2022年10月20日星期四 19:30&quot;,
+      &quot;lastUpdatedTimestamp&quot;: 1666265434000,
+      &quot;createdTime&quot;: 1666265434000
+    },
+    {
+      &quot;title&quot;: &quot;about2 H2&quot;,
+      &quot;frontmatter&quot;: {},
+      &quot;regularPath&quot;: &quot;/about/about2.html&quot;,
+      &quot;relativePath&quot;: &quot;about/about2.md&quot;,
+      &quot;key&quot;: &quot;v-304cfa30&quot;,
+      &quot;path&quot;: &quot;/about/about2.html&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;about2 H2&quot;,
+          &quot;slug&quot;: &quot;about2-h2&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;about2 H2 -2&quot;,
+          &quot;slug&quot;: &quot;about2-h2-2&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;about2 H3-1&quot;,
+          &quot;slug&quot;: &quot;about2-h3-1&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;about2 H3-2&quot;,
+          &quot;slug&quot;: &quot;about2-h3-2&quot;
+        }
+      ],
+      &quot;lastUpdated&quot;: &quot;2022年10月20日星期四 19:30&quot;,
+      &quot;lastUpdatedTimestamp&quot;: 1666265434000,
+      &quot;createdTime&quot;: 1666265434000
+    },
+    {
+      &quot;frontmatter&quot;: {},
+      &quot;regularPath&quot;: &quot;/about/about3.html&quot;,
+      &quot;relativePath&quot;: &quot;about/about3.md&quot;,
+      &quot;key&quot;: &quot;v-8ef0e524&quot;,
+      &quot;path&quot;: &quot;/about/about3.html&quot;,
+      &quot;lastUpdated&quot;: &quot;2022年10月20日星期四 19:30&quot;,
+      &quot;lastUpdatedTimestamp&quot;: 1666265434000,
+      &quot;createdTime&quot;: 1666265434000
+    },
+    {
+      &quot;title&quot;: &quot;Guidea&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;sidebar&quot;: &quot;auto&quot;,
+        &quot;sidebarDepth&quot;: 3
+      },
+      &quot;regularPath&quot;: &quot;/guide/&quot;,
+      &quot;relativePath&quot;: &quot;guide/README.md&quot;,
+      &quot;key&quot;: &quot;v-121c4c0f&quot;,
+      &quot;path&quot;: &quot;/guide/&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;aaa&quot;,
+          &quot;slug&quot;: &quot;aaa&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;bbb&quot;,
+          &quot;slug&quot;: &quot;bbb&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;hhh&quot;,
+          &quot;slug&quot;: &quot;hhh&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;三级标题&quot;,
+          &quot;slug&quot;: &quot;三级标题&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;ccc&quot;,
+          &quot;slug&quot;: &quot;ccc&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;ddd&quot;,
+          &quot;slug&quot;: &quot;ddd&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;eee&quot;,
+          &quot;slug&quot;: &quot;eee&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;fff&quot;,
+          &quot;slug&quot;: &quot;fff&quot;
+        }
+      ],
+      &quot;lastUpdated&quot;: &quot;2022年10月18日星期二 12:26&quot;,
+      &quot;lastUpdatedTimestamp&quot;: 1666067187000,
+      &quot;createdTime&quot;: 1666067187000
+    },
+    {
+      &quot;title&quot;: &quot;临时调试countjs第三方组件&quot;,
+      &quot;frontmatter&quot;: {},
+      &quot;regularPath&quot;: &quot;/packComP/&quot;,
+      &quot;relativePath&quot;: &quot;packComP/README.md&quot;,
+      &quot;key&quot;: &quot;v-0b0a3b19&quot;,
+      &quot;path&quot;: &quot;/packComP/&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;临时调试countjs第三方组件&quot;,
+          &quot;slug&quot;: &quot;临时调试countjs第三方组件&quot;
+        }
+      ],
+      &quot;lastUpdated&quot;: &quot;2022年10月21日星期五 09:44&quot;,
+      &quot;lastUpdatedTimestamp&quot;: 1666316666000,
+      &quot;createdTime&quot;: 1666316666000
+    },
+    {
+      &quot;title&quot;: &quot;vssue&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;sidebar&quot;: &quot;auto&quot;,
+        &quot;sidebarDepth&quot;: 3
+      },
+      &quot;regularPath&quot;: &quot;/vssue/&quot;,
+      &quot;relativePath&quot;: &quot;vssue/README.md&quot;,
+      &quot;key&quot;: &quot;v-ae37088a&quot;,
+      &quot;path&quot;: &quot;/vssue/&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;vssue&quot;,
+          &quot;slug&quot;: &quot;vssue&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;github auth app&quot;,
+          &quot;slug&quot;: &quot;github-auth-app&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;以下是评论区&quot;,
+          &quot;slug&quot;: &quot;以下是评论区&quot;
+        }
+      ],
+      &quot;lastUpdated&quot;: &quot;2022年10月21日星期五 08:09&quot;,
+      &quot;lastUpdatedTimestamp&quot;: 1666310995000,
+      &quot;createdTime&quot;: 1666310995000
+    }
+  ],
+  &quot;themeConfig&quot;: {
+    &quot;nav&quot;: [
+      {
+        &quot;text&quot;: &quot;about&quot;,
+        &quot;items&quot;: [
+          {
+            &quot;text&quot;: &quot;About&quot;,
+            &quot;link&quot;: &quot;/about/&quot;,
+            &quot;type&quot;: &quot;link&quot;
+          }
+        ],
+        &quot;type&quot;: &quot;links&quot;
+      },
+      {
+        &quot;text&quot;: &quot;guide&quot;,
+        &quot;items&quot;: [
+          {
+            &quot;text&quot;: &quot;Guide&quot;,
+            &quot;link&quot;: &quot;/guide/&quot;,
+            &quot;type&quot;: &quot;link&quot;
+          }
+        ],
+        &quot;type&quot;: &quot;links&quot;
+      },
+      {
+        &quot;text&quot;: &quot;packComP&quot;,
+        &quot;items&quot;: [
+          {
+            &quot;text&quot;: &quot;Pack Com P&quot;,
+            &quot;link&quot;: &quot;/packComP/&quot;,
+            &quot;type&quot;: &quot;link&quot;
+          }
+        ],
+        &quot;type&quot;: &quot;links&quot;
+      },
+      {
+        &quot;text&quot;: &quot;vssue&quot;,
+        &quot;items&quot;: [
+          {
+            &quot;text&quot;: &quot;Vssue&quot;,
+            &quot;link&quot;: &quot;/vssue/&quot;,
+            &quot;type&quot;: &quot;link&quot;
+          }
+        ],
+        &quot;type&quot;: &quot;links&quot;
+      }
+    ],
+    &quot;sidebar&quot;: {
+      &quot;/packComP/&quot;: [
+        {
+          &quot;title&quot;: &quot;Pack Com P&quot;,
+          &quot;collapsable&quot;: false,
+          &quot;sidebarDepth&quot;: 1,
+          &quot;children&quot;: [
+            &quot;&quot;
+          ]
+        }
+      ],
+      &quot;/about/&quot;: [
+        {
+          &quot;title&quot;: &quot;About&quot;,
+          &quot;collapsable&quot;: false,
+          &quot;sidebarDepth&quot;: 1,
+          &quot;children&quot;: [
+            &quot;&quot;,
+            &quot;about1&quot;,
+            &quot;about2&quot;,
+            &quot;about3&quot;
+          ]
+        }
+      ],
+      &quot;/guide/&quot;: [
+        {
+          &quot;title&quot;: &quot;Guide&quot;,
+          &quot;collapsable&quot;: false,
+          &quot;sidebarDepth&quot;: 1,
+          &quot;children&quot;: [
+            &quot;&quot;
+          ]
+        }
+      ],
+      &quot;/vssue/&quot;: [
+        {
+          &quot;title&quot;: &quot;Vssue&quot;,
+          &quot;collapsable&quot;: false,
+          &quot;sidebarDepth&quot;: 1,
+          &quot;children&quot;: [
+            &quot;&quot;
+          ]
+        }
+      ]
+    }
+  }
+}</p> <p><span> 1</span><span> 2</span><span> 3</span></p> <p>this.$page:{
+  &quot;title&quot;: &quot;Hello VuePress&quot;,
+  &quot;frontmatter&quot;: {},
+  &quot;regularPath&quot;: &quot;/&quot;,
+  &quot;relativePath&quot;: &quot;README.md&quot;,
+  &quot;key&quot;: &quot;v-332e7429&quot;,
+  &quot;path&quot;: &quot;/&quot;,
+  &quot;headers&quot;: [
+    {
+      &quot;level&quot;: 2,
+      &quot;title&quot;: &quot;tt&quot;,
+      &quot;slug&quot;: &quot;tt&quot;
+    },
+    {
+      &quot;level&quot;: 2,
+      &quot;title&quot;: &quot;临时调试countjs第三方组件&quot;,
+      &quot;slug&quot;: &quot;临时调试countjs第三方组件&quot;
+    },
+    {
+      &quot;level&quot;: 2,
+      &quot;title&quot;: &quot;代码块的高亮&quot;,
+      &quot;slug&quot;: &quot;代码块的高亮&quot;
+    },
+    {
+      &quot;level&quot;: 2,
+      &quot;title&quot;: &quot;index循环&quot;,
+      &quot;slug&quot;: &quot;index循环&quot;
+    },
+    {
+      &quot;level&quot;: 2,
+      &quot;title&quot;: &quot;this.$route&quot;,
+      &quot;slug&quot;: &quot;this-route&quot;
+    }
+  ],
+  &quot;lastUpdated&quot;: &quot;2022年10月21日星期五 09:38&quot;,
+  &quot;lastUpdatedTimestamp&quot;: 1666316326000,
+  &quot;createdTime&quot;: 1666067187000
+}</p> <h2 id="index循环"><a href="#index循环" class="header-anchor">#</a> index循环</h2> <p>  angel blog</p><p> 学习vuepress的demo</p><p> /vuepress-study/</p><p> [
+  [
+    &quot;meta&quot;,
+    {
+      &quot;name&quot;: &quot;author&quot;,
+      &quot;content&quot;: &quot;angelyhch&quot;
+    }
+  ],
+  [
+    &quot;meta&quot;,
+    {
+      &quot;name&quot;: &quot;keywords&quot;,
+      &quot;content&quot;: &quot;vuepress, angelyhch&quot;
+    }
+  ]
+]</p><p> [
+  {
+    &quot;title&quot;: &quot;Hello VuePress&quot;,
+    &quot;frontmatter&quot;: {},
+    &quot;regularPath&quot;: &quot;/&quot;,
+    &quot;relativePath&quot;: &quot;README.md&quot;,
+    &quot;key&quot;: &quot;v-332e7429&quot;,
+    &quot;path&quot;: &quot;/&quot;,
+    &quot;headers&quot;: [
+      {
+        &quot;level&quot;: 2,
+        &quot;title&quot;: &quot;tt&quot;,
+        &quot;slug&quot;: &quot;tt&quot;
+      },
+      {
+        &quot;level&quot;: 2,
+        &quot;title&quot;: &quot;临时调试countjs第三方组件&quot;,
+        &quot;slug&quot;: &quot;临时调试countjs第三方组件&quot;
+      },
+      {
+        &quot;level&quot;: 2,
+        &quot;title&quot;: &quot;代码块的高亮&quot;,
+        &quot;slug&quot;: &quot;代码块的高亮&quot;
+      },
+      {
+        &quot;level&quot;: 2,
+        &quot;title&quot;: &quot;index循环&quot;,
+        &quot;slug&quot;: &quot;index循环&quot;
+      },
+      {
+        &quot;level&quot;: 2,
+        &quot;title&quot;: &quot;this.$route&quot;,
+        &quot;slug&quot;: &quot;this-route&quot;
+      }
+    ],
+    &quot;lastUpdated&quot;: &quot;2022年10月21日星期五 09:38&quot;,
+    &quot;lastUpdatedTimestamp&quot;: 1666316326000,
+    &quot;createdTime&quot;: 1666067187000
+  },
+  {
+    &quot;title&quot;: &quot;Guidea&quot;,
+    &quot;frontmatter&quot;: {
+      &quot;sidebar&quot;: &quot;auto&quot;,
+      &quot;sidebarDepth&quot;: 3
+    },
+    &quot;regularPath&quot;: &quot;/about/&quot;,
+    &quot;relativePath&quot;: &quot;about/README.md&quot;,
+    &quot;key&quot;: &quot;v-e9fcbda6&quot;,
+    &quot;path&quot;: &quot;/about/&quot;,
+    &quot;headers&quot;: [
+      {
+        &quot;level&quot;: 2,
+        &quot;title&quot;: &quot;aaa&quot;,
+        &quot;slug&quot;: &quot;aaa&quot;
+      },
+      {
+        &quot;level&quot;: 2,
+        &quot;title&quot;: &quot;bbb&quot;,
+        &quot;slug&quot;: &quot;bbb&quot;
+      },
+      {
+        &quot;level&quot;: 2,
+        &quot;title&quot;: &quot;hhh&quot;,
+        &quot;slug&quot;: &quot;hhh&quot;
+      },
+      {
+        &quot;level&quot;: 3,
+        &quot;title&quot;: &quot;三级标题&quot;,
+        &quot;slug&quot;: &quot;三级标题&quot;
+      },
+      {
+        &quot;level&quot;: 2,
+        &quot;title&quot;: &quot;ccc&quot;,
+        &quot;slug&quot;: &quot;ccc&quot;
+      },
+      {
+        &quot;level&quot;: 2,
+        &quot;title&quot;: &quot;ddd&quot;,
+        &quot;slug&quot;: &quot;ddd&quot;
+      },
+      {
+        &quot;level&quot;: 2,
+        &quot;title&quot;: &quot;eee&quot;,
+        &quot;slug&quot;: &quot;eee&quot;
+      },
+      {
+        &quot;level&quot;: 2,
+        &quot;title&quot;: &quot;fff&quot;,
+        &quot;slug&quot;: &quot;fff&quot;
+      }
+    ],
+    &quot;lastUpdated&quot;: &quot;2022年10月20日星期四 20:18&quot;,
+    &quot;lastUpdatedTimestamp&quot;: 1666268314000,
+    &quot;createdTime&quot;: 1666268314000
+  },
+  {
+    &quot;title&quot;: &quot;about H2&quot;,
+    &quot;frontmatter&quot;: {},
+    &quot;regularPath&quot;: &quot;/about/about1.html&quot;,
+    &quot;relativePath&quot;: &quot;about/about1.md&quot;,
+    &quot;key&quot;: &quot;v-afdb321c&quot;,
+    &quot;path&quot;: &quot;/about/about1.html&quot;,
+    &quot;headers&quot;: [
+      {
+        &quot;level&quot;: 2,
+        &quot;title&quot;: &quot;about H2&quot;,
+        &quot;slug&quot;: &quot;about-h2&quot;
+      },
+      {
+        &quot;level&quot;: 2,
+        &quot;title&quot;: &quot;about H2 -2&quot;,
+        &quot;slug&quot;: &quot;about-h2-2&quot;
+      },
+      {
+        &quot;level&quot;: 3,
+        &quot;title&quot;: &quot;about H3-1&quot;,
+        &quot;slug&quot;: &quot;about-h3-1&quot;
+      },
+      {
+        &quot;level&quot;: 3,
+        &quot;title&quot;: &quot;about H3-2&quot;,
+        &quot;slug&quot;: &quot;about-h3-2&quot;
+      },
+      {
+        &quot;level&quot;: 3,
+        &quot;title&quot;: &quot;about H3-3&quot;,
+        &quot;slug&quot;: &quot;about-h3-3&quot;
+      },
+      {
+        &quot;level&quot;: 3,
+        &quot;title&quot;: &quot;about H3-4&quot;,
+        &quot;slug&quot;: &quot;about-h3-4&quot;
+      }
+    ],
+    &quot;lastUpdated&quot;: &quot;2022年10月20日星期四 19:30&quot;,
+    &quot;lastUpdatedTimestamp&quot;: 1666265434000,
+    &quot;createdTime&quot;: 1666265434000
+  },
+  {
+    &quot;title&quot;: &quot;about2 H2&quot;,
+    &quot;frontmatter&quot;: {},
+    &quot;regularPath&quot;: &quot;/about/about2.html&quot;,
+    &quot;relativePath&quot;: &quot;about/about2.md&quot;,
+    &quot;key&quot;: &quot;v-304cfa30&quot;,
+    &quot;path&quot;: &quot;/about/about2.html&quot;,
+    &quot;headers&quot;: [
+      {
+        &quot;level&quot;: 2,
+        &quot;title&quot;: &quot;about2 H2&quot;,
+        &quot;slug&quot;: &quot;about2-h2&quot;
+      },
+      {
+        &quot;level&quot;: 2,
+        &quot;title&quot;: &quot;about2 H2 -2&quot;,
+        &quot;slug&quot;: &quot;about2-h2-2&quot;
+      },
+      {
+        &quot;level&quot;: 3,
+        &quot;title&quot;: &quot;about2 H3-1&quot;,
+        &quot;slug&quot;: &quot;about2-h3-1&quot;
+      },
+      {
+        &quot;level&quot;: 3,
+        &quot;title&quot;: &quot;about2 H3-2&quot;,
+        &quot;slug&quot;: &quot;about2-h3-2&quot;
+      }
+    ],
+    &quot;lastUpdated&quot;: &quot;2022年10月20日星期四 19:30&quot;,
+    &quot;lastUpdatedTimestamp&quot;: 1666265434000,
+    &quot;createdTime&quot;: 1666265434000
+  },
+  {
+    &quot;frontmatter&quot;: {},
+    &quot;regularPath&quot;: &quot;/about/about3.html&quot;,
+    &quot;relativePath&quot;: &quot;about/about3.md&quot;,
+    &quot;key&quot;: &quot;v-8ef0e524&quot;,
+    &quot;path&quot;: &quot;/about/about3.html&quot;,
+    &quot;lastUpdated&quot;: &quot;2022年10月20日星期四 19:30&quot;,
+    &quot;lastUpdatedTimestamp&quot;: 1666265434000,
+    &quot;createdTime&quot;: 1666265434000
+  },
+  {
+    &quot;title&quot;: &quot;Guidea&quot;,
+    &quot;frontmatter&quot;: {
+      &quot;sidebar&quot;: &quot;auto&quot;,
+      &quot;sidebarDepth&quot;: 3
+    },
+    &quot;regularPath&quot;: &quot;/guide/&quot;,
+    &quot;relativePath&quot;: &quot;guide/README.md&quot;,
+    &quot;key&quot;: &quot;v-121c4c0f&quot;,
+    &quot;path&quot;: &quot;/guide/&quot;,
+    &quot;headers&quot;: [
+      {
+        &quot;level&quot;: 2,
+        &quot;title&quot;: &quot;aaa&quot;,
+        &quot;slug&quot;: &quot;aaa&quot;
+      },
+      {
+        &quot;level&quot;: 2,
+        &quot;title&quot;: &quot;bbb&quot;,
+        &quot;slug&quot;: &quot;bbb&quot;
+      },
+      {
+        &quot;level&quot;: 2,
+        &quot;title&quot;: &quot;hhh&quot;,
+        &quot;slug&quot;: &quot;hhh&quot;
+      },
+      {
+        &quot;level&quot;: 3,
+        &quot;title&quot;: &quot;三级标题&quot;,
+        &quot;slug&quot;: &quot;三级标题&quot;
+      },
+      {
+        &quot;level&quot;: 2,
+        &quot;title&quot;: &quot;ccc&quot;,
+        &quot;slug&quot;: &quot;ccc&quot;
+      },
+      {
+        &quot;level&quot;: 2,
+        &quot;title&quot;: &quot;ddd&quot;,
+        &quot;slug&quot;: &quot;ddd&quot;
+      },
+      {
+        &quot;level&quot;: 2,
+        &quot;title&quot;: &quot;eee&quot;,
+        &quot;slug&quot;: &quot;eee&quot;
+      },
+      {
+        &quot;level&quot;: 2,
+        &quot;title&quot;: &quot;fff&quot;,
+        &quot;slug&quot;: &quot;fff&quot;
+      }
+    ],
+    &quot;lastUpdated&quot;: &quot;2022年10月18日星期二 12:26&quot;,
+    &quot;lastUpdatedTimestamp&quot;: 1666067187000,
+    &quot;createdTime&quot;: 1666067187000
+  },
+  {
+    &quot;title&quot;: &quot;临时调试countjs第三方组件&quot;,
+    &quot;frontmatter&quot;: {},
+    &quot;regularPath&quot;: &quot;/packComP/&quot;,
+    &quot;relativePath&quot;: &quot;packComP/README.md&quot;,
+    &quot;key&quot;: &quot;v-0b0a3b19&quot;,
+    &quot;path&quot;: &quot;/packComP/&quot;,
+    &quot;headers&quot;: [
+      {
+        &quot;level&quot;: 2,
+        &quot;title&quot;: &quot;临时调试countjs第三方组件&quot;,
+        &quot;slug&quot;: &quot;临时调试countjs第三方组件&quot;
+      }
+    ],
+    &quot;lastUpdated&quot;: &quot;2022年10月21日星期五 09:44&quot;,
+    &quot;lastUpdatedTimestamp&quot;: 1666316666000,
+    &quot;createdTime&quot;: 1666316666000
+  },
+  {
+    &quot;title&quot;: &quot;vssue&quot;,
+    &quot;frontmatter&quot;: {
+      &quot;sidebar&quot;: &quot;auto&quot;,
+      &quot;sidebarDepth&quot;: 3
+    },
+    &quot;regularPath&quot;: &quot;/vssue/&quot;,
+    &quot;relativePath&quot;: &quot;vssue/README.md&quot;,
+    &quot;key&quot;: &quot;v-ae37088a&quot;,
+    &quot;path&quot;: &quot;/vssue/&quot;,
+    &quot;headers&quot;: [
+      {
+        &quot;level&quot;: 2,
+        &quot;title&quot;: &quot;vssue&quot;,
+        &quot;slug&quot;: &quot;vssue&quot;
+      },
+      {
+        &quot;level&quot;: 3,
+        &quot;title&quot;: &quot;github auth app&quot;,
+        &quot;slug&quot;: &quot;github-auth-app&quot;
+      },
+      {
+        &quot;level&quot;: 2,
+        &quot;title&quot;: &quot;以下是评论区&quot;,
+        &quot;slug&quot;: &quot;以下是评论区&quot;
+      }
+    ],
+    &quot;lastUpdated&quot;: &quot;2022年10月21日星期五 08:09&quot;,
+    &quot;lastUpdatedTimestamp&quot;: 1666310995000,
+    &quot;createdTime&quot;: 1666310995000
+  }
+]</p><p> {
+  &quot;nav&quot;: [
+    {
+      &quot;text&quot;: &quot;about&quot;,
+      &quot;items&quot;: [
+        {
+          &quot;text&quot;: &quot;About&quot;,
+          &quot;link&quot;: &quot;/about/&quot;,
+          &quot;type&quot;: &quot;link&quot;
+        }
+      ],
+      &quot;type&quot;: &quot;links&quot;
+    },
+    {
+      &quot;text&quot;: &quot;guide&quot;,
+      &quot;items&quot;: [
+        {
+          &quot;text&quot;: &quot;Guide&quot;,
+          &quot;link&quot;: &quot;/guide/&quot;,
+          &quot;type&quot;: &quot;link&quot;
+        }
+      ],
+      &quot;type&quot;: &quot;links&quot;
+    },
+    {
+      &quot;text&quot;: &quot;packComP&quot;,
+      &quot;items&quot;: [
+        {
+          &quot;text&quot;: &quot;Pack Com P&quot;,
+          &quot;link&quot;: &quot;/packComP/&quot;,
+          &quot;type&quot;: &quot;link&quot;
+        }
+      ],
+      &quot;type&quot;: &quot;links&quot;
+    },
+    {
+      &quot;text&quot;: &quot;vssue&quot;,
+      &quot;items&quot;: [
+        {
+          &quot;text&quot;: &quot;Vssue&quot;,
+          &quot;link&quot;: &quot;/vssue/&quot;,
+          &quot;type&quot;: &quot;link&quot;
+        }
+      ],
+      &quot;type&quot;: &quot;links&quot;
+    }
+  ],
+  &quot;sidebar&quot;: {
+    &quot;/packComP/&quot;: [
+      {
+        &quot;title&quot;: &quot;Pack Com P&quot;,
+        &quot;collapsable&quot;: false,
+        &quot;sidebarDepth&quot;: 1,
+        &quot;children&quot;: [
+          &quot;&quot;
+        ]
+      }
+    ],
+    &quot;/about/&quot;: [
+      {
+        &quot;title&quot;: &quot;About&quot;,
+        &quot;collapsable&quot;: false,
+        &quot;sidebarDepth&quot;: 1,
+        &quot;children&quot;: [
+          &quot;&quot;,
+          &quot;about1&quot;,
+          &quot;about2&quot;,
+          &quot;about3&quot;
+        ]
+      }
+    ],
+    &quot;/guide/&quot;: [
+      {
+        &quot;title&quot;: &quot;Guide&quot;,
+        &quot;collapsable&quot;: false,
+        &quot;sidebarDepth&quot;: 1,
+        &quot;children&quot;: [
+          &quot;&quot;
+        ]
+      }
+    ],
+    &quot;/vssue/&quot;: [
+      {
+        &quot;title&quot;: &quot;Vssue&quot;,
+        &quot;collapsable&quot;: false,
+        &quot;sidebarDepth&quot;: 1,
+        &quot;children&quot;: [
+          &quot;&quot;
+        ]
+      }
+    ]
+  }
+}</p> <h2 id="this-route"><a href="#this-route" class="header-anchor">#</a> this.$route</h2></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">2022年10月21日星期五 09:38</span></div></footer> <!----> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/vuepress-study/assets/js/app.1e47c929.js" defer></script><script src="/vuepress-study/assets/js/2.54a4821a.js" defer></script><script src="/vuepress-study/assets/js/10.0ded0462.js" defer></script><script src="/vuepress-study/assets/js/8.eb190d5e.js" defer></script><script src="/vuepress-study/assets/js/3.ada582e7.js" defer></script>
+  </body>
+</html>
